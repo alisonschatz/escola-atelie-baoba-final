@@ -34,16 +34,16 @@ export default function Header() {
           </div>
 
           {/* Navegação desktop */}
-          <nav className="hidden md:flex items-center space-x-4 lg:space-x-6 flex-shrink-0">
-            <a href="#sobre" className="text-gray-700 hover:text-orange-600 transition-colors font-medium relative group text-sm lg:text-base">
+          <nav className="hidden lg:flex items-center space-x-4 xl:space-x-6 flex-shrink-0">
+            <a href="#sobre" className="text-gray-700 hover:text-orange-600 transition-colors font-medium relative group text-sm xl:text-base">
               Sobre
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-600 transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <a href="#atividades" className="text-gray-700 hover:text-orange-600 transition-colors font-medium relative group text-sm lg:text-base">
+            <a href="#atividades" className="text-gray-700 hover:text-orange-600 transition-colors font-medium relative group text-sm xl:text-base">
               Atividades
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-600 transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <a href="#depoimentos" className="text-gray-700 hover:text-orange-600 transition-colors font-medium relative group text-sm lg:text-base">
+            <a href="#depoimentos" className="text-gray-700 hover:text-orange-600 transition-colors font-medium relative group text-sm xl:text-base">
               Depoimentos
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-600 transition-all duration-300 group-hover:w-full"></span>
             </a>
@@ -58,7 +58,7 @@ export default function Header() {
           {/* Botão menu mobile */}
           <button
             onClick={toggleMenu}
-            className="md:hidden p-2 rounded-lg bg-orange-100/50 text-orange-600 hover:bg-orange-200/50 transition-colors"
+            className="lg:hidden p-2 rounded-lg bg-orange-100/50 text-orange-600 hover:bg-orange-200/50 transition-colors flex-shrink-0"
             aria-label="Toggle menu"
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -67,7 +67,7 @@ export default function Header() {
 
         {/* Menu mobile */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 border-t border-orange-200/50">
+          <div className="lg:hidden mt-4 pb-4 border-t border-orange-200/50">
             <nav className="flex flex-col space-y-3 pt-4">
               <a 
                 href="#sobre" 
