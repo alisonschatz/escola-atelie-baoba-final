@@ -41,12 +41,12 @@ export default function Header() {
               Sobre
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-600 transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <a href="#atividades" className="text-gray-700 hover:text-orange-600 transition-colors font-medium relative group text-sm xl:text-base">
-              Atividades
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-600 transition-all duration-300 group-hover:w-full"></span>
-            </a>
             <a href="#instagram" className="text-gray-700 hover:text-orange-600 transition-colors font-medium relative group text-sm xl:text-base">
               Momentos
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-600 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="#atividades" className="text-gray-700 hover:text-orange-600 transition-colors font-medium relative group text-sm xl:text-base">
+              Atividades
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-600 transition-all duration-300 group-hover:w-full"></span>
             </a>
             <a href="#depoimentos" className="text-gray-700 hover:text-orange-600 transition-colors font-medium relative group text-sm xl:text-base">
@@ -83,18 +83,18 @@ export default function Header() {
                 Sobre
               </a>
               <a 
-                href="#atividades" 
-                className="text-gray-700 hover:text-orange-600 transition-colors font-medium py-2 px-2 rounded-lg hover:bg-orange-50"
-                onClick={closeMenu}
-              >
-                Atividades
-              </a>
-              <a 
                 href="#instagram" 
                 className="text-gray-700 hover:text-orange-600 transition-colors font-medium py-2 px-2 rounded-lg hover:bg-orange-50"
                 onClick={closeMenu}
               >
                 Momentos
+              </a>
+              <a 
+                href="#atividades" 
+                className="text-gray-700 hover:text-orange-600 transition-colors font-medium py-2 px-2 rounded-lg hover:bg-orange-50"
+                onClick={closeMenu}
+              >
+                Atividades
               </a>
               <a 
                 href="#depoimentos" 
