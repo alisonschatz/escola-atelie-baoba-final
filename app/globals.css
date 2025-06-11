@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Animações customizadas */
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 2s ease-in;
+  }
+  
+  /* Sombras de texto para melhor contraste */
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .text-shadow-lg {
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+  }
+  
+  .text-shadow-xl {
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scroll suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Otimização de performance */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Melhorias de acessibilidade */
+button:focus {
+  outline: 2px solid #ea580c;
+  outline-offset: 2px;
+}
+
+/* Animações suaves para carrossel */
+.carousel-slide {
+  transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Backdrop blur fallback */
+@supports not (backdrop-filter: blur()) {
+  .backdrop-blur-sm {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
